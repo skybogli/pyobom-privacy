@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- 원본: store/privacy-ko.md (방침을 바꾸면 두 파일을 같이 고친다) -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>펴봄 개인정보처리방침</title>
+<style>
+:root { color-scheme: light; }
+body { margin: 0; background: #fff; color: #1d2330; font: 16px/1.7 -apple-system, "Segoe UI", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 1.6em; margin: 0 0 8px; }
+h2 { font-size: 1.2em; margin: 32px 0 8px; }
+.meta { color: #5a6475; margin: 0 0 24px; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .95em; }
+th, td { border: 1px solid #d5dbe6; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f5f7fb; }
+a { color: #3b6cf0; word-break: break-all; }
+ul { padding-left: 1.3em; }
+</style>
+</head>
+<body>
+<main>
+<h1>펴봄(Pyobom) 개인정보처리방침</h1>
+<p class="meta">시행일: 2026년 11월 19일<br>개발자: skybogli · 연락처: <a href="mailto:skybogli.dev@gmail.com">skybogli.dev@gmail.com</a></p>
+
+<p>펴봄(이하 "앱")은 PDF·한글·워드·엑셀·PPT 문서를 폰 안에서 열고, 고치고, 스캔하는 앱입니다.<br>
+앱은 회원 가입이나 로그인이 없고, 광고를 넣지 않으며, 사용자의 문서나 사진을 개발자 서버로 보내지 않습니다.</p>
+
+<h2>1. 앱이 다루는 정보와 쓰는 곳</h2>
+<div class="table"><table>
+<tr><th>정보</th><th>쓰는 곳</th><th>밖으로 보내는가</th></tr>
+<tr><td>사용자가 연 문서·그림 파일</td><td>화면에 보여 주기, 고치기, PDF로 바꾸기</td><td>보내지 않음(폰 안에서만 처리)</td></tr>
+<tr><td>카메라 사진(스캔할 때만)</td><td>문서 스캔·PDF 만들기</td><td>보내지 않음</td></tr>
+<tr><td>사용자가 고른 폴더의 파일 목록</td><td>파일 탭에 문서·그림 모아 보기</td><td>보내지 않음</td></tr>
+<tr><td>최근 연 파일·즐겨찾기·설정</td><td>다음에 다시 열기 편하게</td><td>보내지 않음(앱 안에만 저장)</td></tr>
+<tr><td>오류 기록(앱이 꺼졌을 때)</td><td>문제 고치기</td><td>사용자가 직접 [공유]를 누를 때만 사용자가 고른 곳으로</td></tr>
+</table></div>
+
+<h2>2. 권한</h2>
+<ul>
+<li><strong>카메라</strong>: 앱 안 스캔 기능을 쓸 때만 묻습니다. 찍은 사진은 폰 안에만 남습니다.</li>
+<li><strong>폴더 접근</strong>: 사용자가 파일 탭에서 직접 고른 폴더만 봅니다. 고른 폴더는 언제든 [관리 → 빼기]로 뺄 수 있습니다.</li>
+<li><strong>인터넷</strong>: 구글 ML Kit(문서 스캐너·글자 인식)가 필요한 모델을 받거나 아래 3번 정보를 보낼 때 씁니다. 앱 자체는 문서를 인터넷으로 보내지 않습니다.</li>
+</ul>
+
+<h2>3. 구글 ML Kit</h2>
+<p>문서 스캔(테두리 찾기)과 글자 인식(OCR)은 구글 ML Kit를 씁니다. 그림과 글자는 폰 안에서 처리되며 구글로 보내지 않습니다.<br>
+다만 글자 인식·스캔을 쓸 때 ML Kit는 진단과 사용 분석을 위해 다음 정보를 구글에 보냅니다.</p>
+<ul>
+<li>기기 정보(제조사·모델·OS 버전)와 앱 정보(앱 이름·버전)</li>
+<li>기기 ID와 설치할 때마다 새로 정해지는 ID</li>
+<li>성능(처리 속도)·설정·오류 코드 같은 사용 정보</li>
+</ul>
+<p>이 정보는 HTTPS로 암호화해 보내며, 구글은 이를 다른 회사에 넘기지 않는다고 밝히고 있습니다.<br>
+자세한 내용: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></p>
+
+<h2>4. 보관과 지우기</h2>
+<p>앱이 만든 기록(최근 목록·설정·앱 휴지통·글자 인식 결과)은 폰 안 앱 저장 공간에만 있습니다.<br>
+앱 휴지통의 파일은 30일 뒤 저절로 지워지며, 앱을 지우면 앱이 만든 기록도 모두 지워집니다.</p>
+
+<h2>5. 아이</h2>
+<p>앱은 아이를 대상으로 하지 않으며, 아이의 개인정보를 따로 모으지 않습니다.</p>
+
+<h2>6. 바뀔 때</h2>
+<p>이 방침이 바뀌면 이 페이지에 바뀐 날짜와 함께 알립니다.</p>
+
+<h2>7. 연락</h2>
+<p>궁금한 점은 <a href="mailto:skybogli.dev@gmail.com">skybogli.dev@gmail.com</a>으로 보내 주세요.</p>
+</main>
+</body>
+</html>
